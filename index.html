@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet"> <!-- link para jalar iconos -->
+    <title>Document</title>
+</head>
+<body>
+  <!-- seccion de cabecera para menú (header)-->
+  <!-- IMPORTANTE: EL MENÚ SE MANTIENE AL DESLIZARSE POR LA PAGINA -->
+  <header>
+    <div id="header_menu">
+      <div class="menuLeft">
+        <img src="./resource/img/Red Core Peru PNG.png" alt="">
+      </div>
+      <div class="menuRight">
+        <nav>
+          <ul id="menu">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#mision">Mision y valores</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- seccion de slider -->
+<section id="section_slide">
+  <div class="slider">
+    <!-- Inputs para control manual y JS -->
+    <input type="radio" name="radio-btn" id="slide1" checked>
+    <input type="radio" name="radio-btn" id="slide2">
+    <input type="radio" name="radio-btn" id="slide3">
+    <input type="radio" name="radio-btn" id="slide4">
+
+    <!-- Contenedor de slides -->
+    <div class="slides">
+      <div class="slide"><img src="./resource/img/slide1-prueba.png" alt="Slide 1"></div>
+      <div class="slide"><img src="./resource/img/slide2-prueba.png" alt="Slide 2"></div>
+      <div class="slide"><img src="./resource/img/slide3-prueba.png" alt="Slide 3"></div>
+      <div class="slide"><img src="./resource/img/slide4-prueba.png" alt="Slide 4"></div>
+    </div>
+
+    <!-- Puntos de navegación -->
+    <div class="navigation-manual">
+      <label for="slide1"></label>
+      <label for="slide2"></label>
+      <label for="slide3"></label>
+      <label for="slide4"></label>
+    </div>
+
+    <!-- Botones de navegación con íconos -->
+    <div class="slider-buttons">
+      <button id="prev"><i class="fa-solid fa-arrow-left"></i></button>
+      <button id="next"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+  </div>
+</section>
+
+  <!-- seccion de servicios (en contenedores denominados card) -->
+  <!-- iconos en circulos como en el brochure -->
+<section id="servicios">
+  <div class="servicios-wrapper">
+    <h2>Nuestros servicios</h2>
+
+    <div class="servicios-carrusel-wrapper">
+      <button class="btn-flecha left">
+        <i class="fa-solid fa-angles-left"></i>
+      </button>
+
+      <div class="servicios-carrusel" id="carruselServicios">
+        <div class="tarjeta-servicio">
+          <img src="./resource/img/redes-telecomunicaciones.png" alt="">
+          <h3>REDES TELECOMUNICACIONES</h3>
+          <p>Análisis de espectro radioeléctrico para diagnóstico de interferencias y uso de frecuencias.</p>
+        </div>
+
+        <div class="tarjeta-servicio">
+          <img src="./resource/img/fibra-optica.jpeg" alt="">
+          <h3>REDES DE FIBRA ÓPTICA</h3>
+          <p>Tendido de redes de fibra óptica y mantenimiento de planta externa e interna.</p>
+        </div>
+
+        <div class="tarjeta-servicio">
+          <img src="./resource/img/mantenimiento.jpg" alt="">
+          <h3>MANTENIMIENTO</h3>
+          <p>Mantenimiento preventivo y correctivo para sistemas de telecomunicaciones, TI y energía.</p>
+        </div>
+
+        <div class="tarjeta-servicio">
+          <img src="./resource/img/infraestructura.jpg" alt="">
+          <h3>INFRAESTRUCTURA</h3>
+          <p>Instalación de racks, estructuras metálicas, drywall, y reforzamiento de torres.</p>
+        </div>
+
+        <div class="tarjeta-servicio">
+          <img src="./resource/img/seguridad.jpg" alt="">
+          <h3>SEGURIDAD ELECTRÓNICA</h3>
+          <p>CCTV, alarmas, sensores, biometría, y sistemas de intercomunicadores.</p>
+        </div>
+
+        <div class="tarjeta-servicio">
+          <img src="./resource/img/sistema-energia.jpeg" alt="">
+          <h3>SISTEMA DE ENERGÍA</h3>
+          <p>Paneles solares, generadores, híbridos y tableros eléctricos.</p>
+        </div>
+      </div>
+
+      <button class="btn-flecha right">
+       <i class="fa-solid fa-angles-right"></i>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- seccion de nosotros -->
+<section id="nosotros">
+  <div class="contenedor-nosotros">
+    <div class="nosotros-img">
+      <img src="./resource/img/imgNosotros.jpeg" alt="Equipo Red Core Perú">
+    </div>
+    <div class="nosotros-texto">
+      <h2>Nosotros</h2>
+      <p>
+        En Red Core Perú, nos apasiona conectar a las personas y negocios a través de soluciones de telecomunicaciones innovadoras y confiables.
+      </p>
+      <p>
+        Con años de experiencia en el mercado, hemos construido una red robusta y segura, ofreciendo servicios personalizados y confiables.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- seccion de frase -->
+<section id="frase">
+  <div class="frase-contenedor">
+    <div class="frase-texto">
+      <i class="fa-solid fa-quote-right" style="color: #01b0f3; font-size: 2rem;"></i>
+      <h3>
+        Nos guiamos por la innovación constante y la atención personalizada, adaptándonos a las necesidades específicas de nuestros clientes para ofrecerles un valor real y duradero.
+      </h3>
+    </div>
+    <div class="frase-img">
+      <img src="./resource/img/img5gconexcion.jpg" alt="Frase de impacto">
+    </div>
+  </div>
+</section>
+
+  <!-- seccion de mision -->
+<section id="mision">
+  <div class="mision-contenedor">
+    <div class="mision-img">
+      <img src="./resource/img/imgMision.jpg" alt="Misión Red Core Perú">
+    </div>
+    <div class="mision-texto">
+      <h3>Qué nos hace diferentes</h3>
+      <p>En Red Core Perú, no solo ofrecemos servicios de telecomunicaciones, sino que creamos conexiones significativas que impulsan el crecimiento y la innovación.</p>
+      <p>Lo que nos distingue es nuestro compromiso inquebrantable con la calidad, la personalización, y la tecnología de vanguardia.</p>
+      <p>Nuestra misión es ofrecer soluciones de telecomunicaciones innovadoras y confiables, que conecten a personas y empresas en todo el Perú.</p>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- sección de valores (en cards con tooltip desde el ícono) -->
+<section id="valores">
+  <div class="valores-contenedor">
+    <h2>Nuestros Valores</h2>
+    <div class="valores-grid">
+      
+      <div class="valor-card">
+        <i class="fa-solid fa-check" onclick="toggleTooltip(this)"></i>
+        <h3>Excelencia</h3>
+        <div class="tooltip-descripcion">Buscamos la perfección en todo lo que hacemos.</div>
+      </div>
+
+      <div class="valor-card">
+        <i class="fa-solid fa-shield" onclick="toggleTooltip(this)"></i>
+        <h3>Seguridad</h3>
+        <div class="tooltip-descripcion">Protegemos la información y personas a todo nivel.</div>
+      </div>
+
+      <div class="valor-card">
+        <i class="fa-solid fa-scale-balanced" onclick="toggleTooltip(this)"></i>
+        <h3>Ética</h3>
+        <div class="tooltip-descripcion">Nos guiamos por principios y valores sólidos.</div>
+      </div>
+
+      <div class="valor-card">
+        <i class="fa-solid fa-handshake" onclick="toggleTooltip(this)"></i>
+        <h3>Respeto</h3>
+        <div class="tooltip-descripcion">Escuchamos y valoramos a cada persona con empatía.</div>
+      </div>
+
+      <div class="valor-card">
+        <i class="fa-solid fa-heart-circle-check" onclick="toggleTooltip(this)"></i>
+        <h3>Confianza</h3>
+        <div class="tooltip-descripcion">Actuamos con transparencia y responsabilidad.</div>
+      </div>
+
+      <div class="valor-card">
+        <i class="fa-solid fa-hand-holding-heart" onclick="toggleTooltip(this)"></i>
+        <h3>Veracidad</h3>
+        <div class="tooltip-descripcion">Ofrecemos siempre información clara y honesta.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- seccion de Contacto -->
+<section id="contacto">
+  <div class="contacto-container">
+    <h2>Déjanos tus datos y nos pondremos en contacto contigo</h2>
+    <form class="contacto-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" placeholder="Ej. Juan">
+        </div>
+        <div class="form-group">
+          <label for="apellido">Apellidos</label>
+          <input type="text" id="apellido" placeholder="Ej. Pérez Ruiz">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="celular">Número de celular</label>
+          <input type="number" id="celular" placeholder="981 XXX XXX">
+        </div>
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" placeholder="ejemplo@correo.com">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="direccion">Dirección</label>
+        <input type="text" id="direccion" placeholder="Tu dirección actual">
+      </div>
+
+      <div class="form-group">
+        <label for="servicesOption">¿Qué servicio le interesa?</label>
+        <select id="servicesOption" name="servicesOption">
+          <option value="">Seleccione una opción</option>
+          <option value="opcion1">Redes de telecomunicaciones</option>
+          <option value="opcion2">Fibra óptica</option>
+          <option value="opcion3">Infraestructura y mantenimiento</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="mensaje">Escriba un mensaje o nota</label>
+        <textarea id="mensaje" rows="4" placeholder="Cuéntanos en qué podemos ayudarte..."></textarea>
+      </div>
+
+      <button type="submit" class="btn-enviar">Enviar</button>
+    </form>
+  </div>
+</section>
+
+
+  <!-- final de pagina-->
+  <!-- final de pagina-->
+<footer id="footer">
+  <div class="footer-contenedor">
+    <!-- Columna izquierda -->
+    <div class="footer-columna">
+      <img src="./resource/img/imgIconBlanco.png" alt="Red Core Perú" class="footer-logo">
+      <div class="footer-redes">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <!-- Columna derecha -->
+    <div class="footer-columna">
+      <h3>Contacto</h3>
+      <ul class="footer-contacto">
+        <li><i class="fa-solid fa-location-dot"></i> Jr. Ubicación de tienda física - Chachapoyas - Amazonas</li>
+        <li><i class="fa-solid fa-phone"></i> 981 ### ### - WhatsApp</li>
+        <li><i class="fa-solid fa-envelope"></i> usermail@mail.com</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Red Core Perú. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+
+  <div id="popup-descripcion" class="popup">
+    <div class="popup-contenido">
+      <span class="cerrar" onclick="cerrarDescripcion()">&times;</span>
+      <p id="texto-descripcion"></p>
+    </div>
+  </div>
+
+  <script src="Slide.js"></script>
+  <script src="servicios.js"></script>
+  <script src="Descripcion.js"></script>
+  <script src="contacto.js"></script>
+</body>
+</html>
