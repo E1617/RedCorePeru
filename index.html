@@ -12,6 +12,11 @@
   <!-- IMPORTANTE: EL MENÚ SE MANTIENE AL DESLIZARSE POR LA PAGINA -->
   <header>
     <div id="header_menu">
+    <button class="menu-toggle" onclick="document.querySelector('.menuRight ul').classList.toggle('active')">
+      <i class="fas fa-bars"></i>
+    </button>
+
+
       <div class="menuLeft">
         <img src="./resource/img/Red Core Peru PNG.png" alt="">
       </div>
@@ -19,10 +24,10 @@
         <nav>
           <ul id="menu">
             <li><a href="#">Inicio</a></li>
+            <li><a href="#paquetes">Promociones</a></li>
             <li><a href="#servicios">Servicios</a></li>
             <li><a href="#nosotros">Nosotros</a></li>
             <li><a href="#mision">Mision y valores</a></li>
-            <li><a href="#contacto">Contacto</a></li>
           </ul>
         </nav>
       </div>
@@ -40,10 +45,10 @@
 
     <!-- Contenedor de slides -->
     <div class="slides">
-      <div class="slide"><img src="./resource/img/slide1-prueba.png" alt="Slide 1"></div>
-      <div class="slide"><img src="./resource/img/slide2.png" alt="Slide 2"></div>
-      <div class="slide"><img src="./resource/img/slide3.jpg" alt="Slide 3"></div>
-      <div class="slide"><img src="./resource/img/slide4.jpg" alt="Slide 4"></div>
+      <div class="slide"><img src="./resource/img/FRAY.jpg" alt="Slide 1"></div>
+      <div class="slide"><img src="./resource/img/slide2-prueba.png" alt="Slide 2"></div>
+      <div class="slide"><img src="./resource/img/slide3-prueba.png" alt="Slide 3"></div>
+      <div class="slide"><img src="./resource/img/slide4-prueba.png" alt="Slide 4"></div>
     </div>
 
     <!-- Puntos de navegación -->
@@ -58,6 +63,50 @@
     <div class="slider-buttons">
       <button id="prev"><i class="fa-solid fa-arrow-left"></i></button>
       <button id="next"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+  </div>
+</section>
+
+
+<!-- sección de paquetes promocionales -->
+<section id="paquetes">
+  <div class="paquetes-contenedor">
+    <h2>Promociones de Internet</h2>
+    <div class="paquetes-grid">
+
+      <div class="paquete-card">
+        <div class="paquete-header">60 Mbps</div>
+        <div class="paquete-precio">S/ 69.90 <span>x Mes</span></div>
+        <ul class="paquete-beneficios">
+          <li>✅ 100% Fibra Óptica</li>
+          <li>✅ Velocidad Simétrica</li>
+          <li>✅ Router doble banda 2.4 y 5.8</li>
+        </ul>
+        <button class="paquete-btn">¡Quiero este plan!</button>
+      </div>
+
+      <div class="paquete-card recomendado">
+        <div class="paquete-header">120 Mbps</div>
+        <div class="paquete-precio">S/ 99.90 <span>x Mes</span></div>
+        <ul class="paquete-beneficios">
+          <li>✅ 100% Fibra Óptica</li>
+          <li>✅ Velocidad Simétrica</li>
+          <li>✅ Router doble banda 2.4 y 5.8</li>
+        </ul>
+        <button class="paquete-btn">¡Quiero este plan!</button>
+      </div>
+
+      <div class="paquete-card">
+        <div class="paquete-header">200 Mbps</div>
+        <div class="paquete-precio">S/ 119.90 <span>x Mes</span></div>
+        <ul class="paquete-beneficios">
+          <li>✅ 100% Fibra Óptica</li>
+          <li>✅ Velocidad Simétrica</li>
+          <li>✅ Router doble banda 2.4 y 5.8</li>
+        </ul>
+        <button class="paquete-btn">¡Quiero este plan!</button>
+      </div>
+
     </div>
   </div>
 </section>
@@ -217,60 +266,6 @@
     </div>
   </div>
 </section>
-
-  <!-- seccion de Contacto -->
-<section id="contacto">
-  <div class="contacto-container">
-    <h2>Déjanos tus datos y nos pondremos en contacto contigo</h2>
-    <form class="contacto-form">
-      <div class="form-row">
-        <div class="form-group">
-          <label for="nombre">Nombre</label>
-          <input type="text" id="nombre" placeholder="Ej. Juan">
-        </div>
-        <div class="form-group">
-          <label for="apellido">Apellidos</label>
-          <input type="text" id="apellido" placeholder="Ej. Pérez Ruiz">
-        </div>
-      </div>
-
-      <div class="form-row">
-        <div class="form-group">
-          <label for="celular">Número de celular</label>
-          <input type="number" id="celular" placeholder="981 XXX XXX">
-        </div>
-        <div class="form-group">
-          <label for="email">Correo electrónico</label>
-          <input type="email" id="email" placeholder="ejemplo@correo.com">
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label for="direccion">Dirección</label>
-        <input type="text" id="direccion" placeholder="Tu dirección actual">
-      </div>
-
-      <div class="form-group">
-        <label for="servicesOption">¿Qué servicio le interesa?</label>
-        <select id="servicesOption" name="servicesOption">
-          <option value="">Seleccione una opción</option>
-          <option value="opcion1">Redes de telecomunicaciones</option>
-          <option value="opcion2">Fibra óptica</option>
-          <option value="opcion3">Infraestructura y mantenimiento</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label for="mensaje">Escriba un mensaje o nota</label>
-        <textarea id="mensaje" rows="4" placeholder="Cuéntanos en qué podemos ayudarte..."></textarea>
-      </div>
-
-      <button type="submit" class="btn-enviar">Enviar</button>
-    </form>
-  </div>
-</section>
-
-
   <!-- final de pagina-->
   <!-- final de pagina-->
 <footer id="footer">
