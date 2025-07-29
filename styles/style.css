@@ -125,34 +125,29 @@ header {
 
 
 
-/*slide*/
-
-/* SLIDER PRINCIPAL */
-
 .slider {
   width: 100%;
-  aspect-ratio: 16 / 9; /* Mantiene proporción responsiva */
+  height: 300px;
   overflow: hidden;
   position: relative;
 }
 
 .slides {
   display: flex;
-  width: 400%; /* 4 imágenes */
+  width: 100%;
   height: 100%;
   transition: transform 0.6s ease-in-out;
 }
 
 .slide {
   width: 100%;
-  flex: 1 0 100%;
+  flex-shrink: 0;
 }
 
 .slide img {
   width: 100%;
-  height: 90px;
+  height: 100%;
   object-fit: cover;
-  display: block;
 }
 
 /* Inputs invisibles */
@@ -825,12 +820,6 @@ input[type="radio"] {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
-  /* Slider img adaptable */
-  .slide img {
-    width: 100%;
-    height: 300px;
-  }
 
   /* Valores grid a columna */
   .valores-grid {
