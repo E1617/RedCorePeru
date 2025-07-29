@@ -819,7 +819,6 @@ input[type="radio"] {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
   /* Valores grid a columna */
   .valores-grid {
     grid-template-columns: 1fr;
