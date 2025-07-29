@@ -16,13 +16,13 @@ body {
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* Header */
+/* Header fijo */
 header {
   position: sticky;
   top: 0;
   width: 100%;
   background-color: #ffffff;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.859);
   z-index: 1000;
 }
 
@@ -38,6 +38,7 @@ header {
   object-fit: contain;
 }
 
+/* Menú normal en desktop */
 .menuRight ul {
   list-style: none;
   display: flex;
@@ -49,8 +50,8 @@ header {
   color: #000000;
   font-weight: bold;
   padding: 8px 15px;
-  background-color: rgba(200, 200, 200, 0); /* gris claro transparente */
-  border-radius: 20px; /* bordes ovalados */
+  background-color: rgba(200, 200, 200, 0);
+  border-radius: 20px;
   transition: all 0.8s ease;
   border: 2px solid transparent;
   display: inline-block;
@@ -58,55 +59,85 @@ header {
 }
 
 .menuRight a:hover {
-  background-color: rgba(0, 149, 255, 0.188); /* cambia a un azul claro */
+  background-color: rgba(0, 149, 255, 0.188);
   color: #03a0fc;
   border: 2px solid #01aef300;
   animation: bounceUp 0.8s ease forwards;
 }
 
-@keyframes bounceUp { //animacion de rebote suave
-  0% {
-    transform: translateY(0);
+/* Animación de rebote suave */
+@keyframes bounceUp {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+/* Botón hamburguesa oculto en desktop */
+.menu-toggle {
+  display: none;
+}
+
+/* RESPONSIVE: Pantallas pequeñas */
+@media (max-width: 768px) {
+
+  /* Muestra el botón hamburguesa */
+  .menu-toggle {
+    display: block;
+    background-color: transparent;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #030303;
+    margin-left: auto;
   }
-  50% {
-    transform: translateY(-8px);
+
+  /* Layout vertical del header */
+  #header_menu {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
   }
-  100% {
-    transform: translateY(0);
+
+  .menuRight {
+    width: 100%;
+  }
+
+  /* Oculta el menú por defecto */
+  .menuRight ul {
+    display: none;
+    flex-direction: column;
+    width: 50%;
+    gap: 15px;
+    margin-top: 10px;
+    background-color: #ffffff8e;
+    padding: 10px;
+    border-radius: 15px;
+    position: absolute;
+    top: 60px;
+    right: 15px;
+  }
+
+  /* Muestra el menú si tiene la clase active */
+  .menuRight ul.active {
+    display: flex;
   }
 }
 
 
-.nav-menu ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.nav-menu a {
-  text-decoration: none;
-  color: rgb(2, 198, 220);
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.nav-menu a:hover {
-  color: #ff9800;
-}
 
 /*slide*/
 
 .slider {
   width: 100%;
-  height: 400px;
+  height: 300px;
   overflow: hidden;
   position: relative;
 }
 
 .slides {
   display: flex;
-  width: 400%;
-  height: 100%;
+  width: 100%;
+  height: 500px;
   transition: transform 0.6s ease-in-out;
 }
 
@@ -117,7 +148,7 @@ header {
 
 .slide img {
   width: 25%;
-  height: 100%;
+  height: 90%;
   object-fit: cover;
 }
 
@@ -791,45 +822,6 @@ input[type="radio"] {
   }
 }
 
-@media (max-width: 768px) {
-  /* Header y menú responsivo */
-  #header_menu {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 20px;
-  }
-
-  .menuRight {
-    width: 100%;
-  }
-
-  .menuRight ul {
-    flex-direction: column;
-    width: 100%;
-    gap: 15px;
-    margin-top: 10px;
-    display: none;
-  }
-
-  .menuRight ul.active {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
-    background-color: transparent;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    margin-left: auto;
-    color: #004679;
-  }
-
-  /* Añade clase a mostrar icono hamburguesa */
-  .menu-toggle i {
-    font-size: 1.8rem;
-  }
-
   /* Slider img adaptable */
   .slide img {
     width: 100%;
@@ -855,38 +847,4 @@ input[type="radio"] {
   .footer-contacto {
     justify-content: center;
   }
-}
 
-/* Por defecto (pantallas grandes): botón oculto */
-.menu-toggle {
-  display: none;
-}
-
-/* Solo se muestra en móviles o pantallas <= 768px */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-    background: none;
-    border: none;
-    font-size: 24px;
-    color: white; /* Cambia si necesitas otro color */
-    cursor: pointer;
-    z-index: 1000;
-  }
-
-  /* (opcional) estilo del menú desplegable */
-  .menuRight ul {
-    display: none;
-    flex-direction: column;
-    background-color: #131629;
-    position: absolute;
-    top: 60px;
-    right: 10px;
-    padding: 10px;
-    border-radius: 8px;
-  }
-
-  .menuRight ul.active {
-    display: flex;
-  }
-}
