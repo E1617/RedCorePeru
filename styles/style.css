@@ -150,12 +150,11 @@ header {
   object-fit: cover;
 }
 
-/* Inputs invisibles */
 input[type="radio"] {
   display: none;
 }
 
-/* Movimiento por input */
+/* Cambio automático con input checked */
 #slide1:checked ~ .slides {
   transform: translateX(0%);
 }
@@ -169,7 +168,7 @@ input[type="radio"] {
   transform: translateX(-300%);
 }
 
-/* Puntos navegación */
+/* Puntos de navegación */
 .navigation-manual {
   position: absolute;
   width: 100%;
@@ -192,7 +191,7 @@ input[type="radio"] {
   background: rgb(3, 237, 241);
 }
 
-/* Botones de flechas */
+/* Botones con íconos */
 .slider-buttons {
   position: absolute;
   top: 50%;
@@ -205,7 +204,7 @@ input[type="radio"] {
 }
 
 .slider-buttons button {
-  background-color: #ECECEC;
+  background-color:  #ECECEC;
   border: none;
   color: white;
   font-size: 22px;
