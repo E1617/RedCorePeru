@@ -11,28 +11,29 @@
   <!-- seccion de cabecera para menú (header)-->
   <!-- IMPORTANTE: EL MENÚ SE MANTIENE AL DESLIZARSE POR LA PAGINA -->
   <header>
-    <div id="header_menu">
-    <button class="menu-toggle" onclick="document.querySelector('.menuRight ul').classList.toggle('active')">
+  <div id="header_menu">
+    <div class="menuLeft">
+      <img src="./resource/img/Red Core Peru PNG.png" alt="">
+    </div>
+
+    <!-- Botón hamburguesa SOLO para móviles -->
+    <button class="menu-toggle" onclick="document.querySelector('#menu').classList.toggle('active')">
       <i class="fas fa-bars"></i>
     </button>
 
-
-      <div class="menuLeft">
-        <img src="./resource/img/Red Core Peru PNG.png" alt="">
-      </div>
-      <div class="menuRight">
-        <nav>
-          <ul id="menu">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#paquetes">Promociones</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#nosotros">Nosotros</a></li>
-            <li><a href="#mision">Mision y valores</a></li>
-          </ul>
-        </nav>
-      </div>
+    <div class="menuRight">
+      <nav>
+        <ul id="menu">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#paquetes">Promociones</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#mision">Misión y valores</a></li>
+        </ul>
+      </nav>
     </div>
-  </header>
+  </div>
+</header>
 
   <!-- seccion de slider -->
 <section id="section_slide">
@@ -45,8 +46,8 @@
 
     <!-- Contenedor de slides -->
     <div class="slides">
-      <div class="slide"><img src="./resource/img/slide1-prueba.png" alt="Slide 1"></div>
-      <div class="slide"><img src="./resource/img/slide2.jpg" alt="slide2.jpg"></div>
+      <div class="slide"><img src="./resource/img/slide1-prueba.png" alt="slide1.jpg"></div>
+      <div class="slide"><img src="./resource/img/slide2.png" alt="slide2.jpg"></div>
       <div class="slide"><img src="./resource/img/slide3.jpg" alt="slide3.jpg"></div>
       <div class="slide"><img src="./resource/img/slide4.jpg" alt="slide4.jpg"></div>
     </div>
@@ -80,7 +81,7 @@
         <ul class="paquete-beneficios">
           <li>✅ 100% Fibra Óptica</li>
           <li>✅ Velocidad Simétrica</li>
-          <li>✅ Router doble banda 2.4 y 5.8</li>
+          <li>✅ Wifi 6</li>
         </ul>
         <button class="paquete-btn">¡Quiero este plan!</button>
       </div>
@@ -91,7 +92,7 @@
         <ul class="paquete-beneficios">
           <li>✅ 100% Fibra Óptica</li>
           <li>✅ Velocidad Simétrica</li>
-          <li>✅ Router doble banda 2.4 y 5.8</li>
+          <li>✅ Wifi 6</li>
         </ul>
         <button class="paquete-btn">¡Quiero este plan!</button>
       </div>
@@ -102,7 +103,7 @@
         <ul class="paquete-beneficios">
           <li>✅ 100% Fibra Óptica</li>
           <li>✅ Velocidad Simétrica</li>
-          <li>✅ Router doble banda 2.4 y 5.8</li>
+          <li>✅ Wifi 6</li>
         </ul>
         <button class="paquete-btn">¡Quiero este plan!</button>
       </div>
